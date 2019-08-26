@@ -50,6 +50,9 @@ for f in files:
 files = [f for f in glob.glob(path +"/web/views/webclient_templates.xml") and f in glob.glob(path +"/web/views/databse_manager.html") ]
 for f in files:
     suppressionMot("favicon.ico","",f)
+	suppressionMot("logo.png","",f)
+	suppressionMot("logo2.png","",f)
+	
 
 def replaceOccurrencesInFile(oldText, newText, atFile):
     f = open(atFile, 'r')
